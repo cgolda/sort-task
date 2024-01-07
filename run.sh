@@ -27,10 +27,10 @@ python3 -m pytest -s --input_filename="${DIR}file2.json" tests/test_file_acquisi
 check_status_and_exit $?
 
 python3 sort_task.py compare_and_filter \
-                    data/file1.json \
-                    data/file2.json \
-                    data/out1.json \
-                    data/out2.json
+                    "${DIR}file1.json" \
+                    "${DIR}file2.json" \
+                    "${DIR}out1.json" \
+                    "${DIR}out2.json"
 
 # Just run a few basic tests to ensure all worked as expected
 python3 -m pytest tests/test_sorted_lines.py
