@@ -55,4 +55,4 @@ _Run entire pipelien with pytests_
 ```
 
 ## Contact
-Thank you for the opportunity to perform this interview task.  I am excited about the prospect of working at Northern Light.  If you have any follow up questions for me, please contace me at the email or phone number on my resume.  Thank you and have a nice week!
+Thank you for the opportunity to perform this interview task.  I am excited about the prospect of working at Northern Light.  If you have any follow up questions for me, please contact me at the email or phone number on my resume.  Thank you and have a nice week!
