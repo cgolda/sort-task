@@ -2,7 +2,7 @@
 ### Introduction:
 Per the request, the main function does a check to ensure that two sorted
 files do not contain any duplicate entries, and outputs file1 content that is not in file2
-and the reverse.  Additonally, there is functionality to generate the two lexigraphically 
+and the reverse.  Additonally, there is functionality to generate the two lexicographically
 sorted lists programtically through a Python module or through an API (currently disabled due to cost).  This serves as the set up phase for this task.  Lastly, there is a Pytest
 layer that ensures integrity of data from the generation to the final output phases.
 
