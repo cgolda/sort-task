@@ -16,9 +16,8 @@ def get_data_local(output_filename, sentence_count=10):
     """This function leverages wonderwords to generate n sentences to a specified file"""
 
     # Generate random sentences via wonderwords
-    num_sentences = sentence_count
     sentence_generator = RandomSentence()
-    sentences = [sentence_generator.sentence() for _ in range(num_sentences)]
+    sentences = [sentence_generator.sentence() for _ in range(sentence_count)]
 
     # Add mock data (one line represented in both files and one specific)
     sentences.append("This sentence is in both files")
@@ -43,7 +42,7 @@ def get_data_remote(output_filename, sentence_count=10):
     }
     
     sentences = []
-    for _ in range(0, len(sentence_count)):
+    for _ in range(sentence_count):
         response = requests.get(url, headers=headers, params=querystring)
         sentence = response.json()
         sentences.append(sentence)
