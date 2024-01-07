@@ -1,15 +1,14 @@
 import json
 
-# Configuration data for this task, if API is used
+# Configuration data for this task (if API is used)
 sort_data = {
     'api_key': '@@PLACEHOLDER@@',
     'api_host': 'linguatools-sentence-generating.p.rapidapi.com',
     'api_url': 'https://linguatools-sentence-generating.p.rapidapi.com/realise'
-
 }
 
 def sort_and_json_format(sentences: list[str]) -> json:
-    """Sorts the incoming list and output to a formatted json file"""
+    """Sorts the incoming list and outputs to a formatted json file"""
     
     # Sort the list of sentences lexicographically
     sentences.sort()
