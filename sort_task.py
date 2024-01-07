@@ -41,9 +41,12 @@ def get_data_remote(output_filename, sentence_count=10):
         "X-RapidAPI-Key": utils.sort_data['api_key'],
         "X-RapidAPI-Host": utils.sort_data['api_host']
     }
-
-    response = requests.get(url, headers=headers, params=querystring)
-    sentences = response.json()
+    
+    sentences = []
+    for i in range(len(0, sentence_count)):
+        response = requests.get(url, headers=headers, params=querystring)
+        sentence = response.json()
+        sentences.append(sentence)
 
     json_data = utils.sort_and_json_format(sentences)
     utils.dump_to_file(json_data, output_filename)
