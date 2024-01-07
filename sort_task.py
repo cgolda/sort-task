@@ -34,7 +34,7 @@ def get_data_remote(output_filename, sentence_count=10):
 
     url = utils.sort_data['api_url']
 
-    querystring = {"object":"job","subject":"Python","verb":"programming"}
+    querystring = {"object":"Python application","subject":"Peter","verb":"programmed"}
 
     headers = {
         "X-RapidAPI-Key": utils.sort_data['api_key'],
