@@ -1,6 +1,6 @@
 # Sort-task
 ### Introduction:
-Per the Interview assignment, the main function does a check to ensure that two sorted
+Per the request, the main function does a check to ensure that two sorted
 files do not contain any duplicate entries, and outputs file1 content that is not in file2
 and the reverse.  Additonally, there is functionality to generate the two lexigraphically 
 sorted lists programtically through a Python module or through an API (currently disabled due to cost).  This serves as the set up phase for this task.  Lastly, there is a Pytest
@@ -55,4 +55,4 @@ _Run entire pipelien with pytests_
 ```
 
 ## Contact
-Thank you for the opportunity to perform this interview task.  I am excited about the prospect of working at Northern Light.  If you have any follow up questions for me, please contact me at the email or phone number on my resume.  Thank you and have a nice week!
+Thank you for the opportunity to work on this task.  If you have any follow up questions for me, please contact me at the email or phone number previously provided.  Thank you and have a nice week!
