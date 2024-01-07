@@ -10,7 +10,7 @@ layer that ensures integrity of data from the generation to the final output pha
 I leveraged the click module as a command line user interface instead of argparse for its user friendly functionality; however, it doesn't seem like Python annotations are a widely used convention with this module, so I limited them to the generic_utils library.  In larger ETL pipeline frameworks like Kedro, I use them extensively.
 
 ## Usage
-There are two ways to run this task; either directly from the click module or running the included bash script which glues together a short data pipeline.  Both methods are covered below.
+There are two ways to run this task, either directly from the click module or running the included bash script which glues together a short data pipeline.  Both methods are covered below.
 
 ## Generating data
 
@@ -19,7 +19,7 @@ _Generate a single file (repeat for the second comparison file)_
 ```python3 sort_task.py get_data_local "${DIR}file1.json" $NUMBER_OF_LINES ```
 
 
-_Run compare and filter, with output to two separate files_
+_Run compare and filter with output to two separate files_
 
 ```
 python3 sort_task.py compare_and_filter \
@@ -30,7 +30,7 @@ python3 sort_task.py compare_and_filter \
 
 ```
 
-_Run entire pipelien with pytests_
+_Run entire pipeline with pytests_
 
 ```./run.sh```
 
